@@ -30,20 +30,11 @@ class HomeController extends Controller
 
     public function mevent(Request $request)
     {
-        /*$obj = $request->all();
+        $obj = $request->all();
         $dbb = new Mevent();
         $dbb->obj = serialize($obj);
         $dbb->save();
-        return $dbb->obj;*/
-        $fh = fopen('dump.log', 'a+');
-        if ( $fh )
-        {
-        // Dump body
-            fwrite($fh, print_r($request->all(), true));
-            fclose($fh);
-        }
-
-        return "ok";
+        return $dbb->obj;
 
     }
 }
