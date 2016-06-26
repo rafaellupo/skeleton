@@ -15,6 +15,7 @@ class HomeController extends Controller
     public function __construct()
     {
         //$this->middleware('auth');
+        $this->middleware('cors');
     }
 
     /**
@@ -27,7 +28,7 @@ class HomeController extends Controller
         return view('home');
     }
 
-    public function mevent()
+    public function mevent(Request $request)
     {
         /*$obj = $request->all();
         $dbb = new Mevent();
@@ -38,7 +39,7 @@ class HomeController extends Controller
         if ( $fh )
         {
         // Dump body
-            fwrite($fh, print_r($_POST, true));
+            fwrite($fh, print_r($request->all(), true));
             fclose($fh);
         }
 
