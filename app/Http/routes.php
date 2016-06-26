@@ -10,8 +10,8 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-$http_origin = Request::get('HTTP_ORIGIN');
-header('Access-Control-Allow-Origin:' . $http_origin);
+//$http_origin = Request::get('HTTP_ORIGIN');
+header('Access-Control-Allow-Origin: http://localhost');
 header('Access-Control-Allow-Credentials: true');
 header('Access-Control-Allow-Methods:  POST, GET, OPTIONS, PUT, DELETE');
 header('Access-Control-Allow-Headers:  Content-Type, X-Auth-Token, Origin, Authorization');
