@@ -19,4 +19,4 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-Route::any('/event', 'HomeController@mevent')->middleware(['cors']);
+Route::any('event', 'HomeController@mevent')->middleware(['cors']);
