@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-//use App\Http\Requests\Request;
 use App\Http\Requests;
 use App\Mevent;
 use Illuminate\Http\Request;
@@ -28,13 +27,13 @@ class HomeController extends Controller
         return view('home');
     }
 
-    public function mevent()
+    public function mevent(Request $request)
     {
-        $obj = Request::all();
+        $obj = $request->all();
         $dbb = new Mevent();
         $dbb->obj = serialize($obj);
         $dbb->save();
-        return true;
+        return $dbb->obj;
 
     }
 }

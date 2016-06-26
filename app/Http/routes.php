@@ -19,4 +19,4 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-Route::post('/event', 'HomeController@mevent');
+Route::any('/event', 'HomeController@mevent');
