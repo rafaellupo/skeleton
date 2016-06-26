@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
+//use App\Http\Requests\Request;
 use App\Http\Requests;
+use App\Mevent;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -14,7 +15,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        //$this->middleware('auth');
     }
 
     /**
@@ -25,5 +26,15 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
+    }
+
+    public function mevent()
+    {
+        $obj = Request::all();
+        $dbb = new Mevent();
+        $dbb->obj = serialize($obj);
+        $dbb->save();
+        return true;
+
     }
 }
