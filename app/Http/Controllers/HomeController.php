@@ -27,13 +27,22 @@ class HomeController extends Controller
         return view('home');
     }
 
-    public function mevent(Request $request)
+    public function mevent()
     {
-        $obj = $request->all();
+        /*$obj = $request->all();
         $dbb = new Mevent();
         $dbb->obj = serialize($obj);
         $dbb->save();
-        return $dbb->obj;
+        return $dbb->obj;*/
+        $fh = fopen('dump.log', 'a+');
+        if ( $fh )
+        {
+        // Dump body
+            fwrite($fh, print_r($_POST, true));
+            fclose($fh);
+        }
+
+        return "ok";
 
     }
 }
