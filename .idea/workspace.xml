@@ -47,11 +47,9 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-              <folding>
-                <element signature="e#7#392#0#PHP" expanded="false" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -303,12 +301,12 @@
       <option name="presentableId" value="Default" />
       <updated>1466753968897</updated>
       <workItem from="1466753970275" duration="5851000" />
-      <workItem from="1466917393328" duration="5088000" />
+      <workItem from="1466917393328" duration="5199000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21377000" />
+    <option name="totallyTimeSpent" value="21488000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="27" width="1260" height="677" extended-state="0" />
@@ -374,9 +372,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-          <folding>
-            <element signature="e#7#392#0#PHP" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -546,11 +542,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-          <folding>
-            <element signature="e#7#392#0#PHP" expanded="false" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
